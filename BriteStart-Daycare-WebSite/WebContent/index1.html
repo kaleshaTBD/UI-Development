@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+if($(window).width()>739){
+$(document).ready(function(){
+   
+        $("h1, h2, p").addClass("blue");
+        $("img").addClass("img2");
+        $("div").addClass("important");
+    
+});
+
+}
+else{
+$(document).ready(function(){
+    
+        $("h1, h2, p").addClass("blue1");
+        $("img").addClass("img1");
+        $("#a").addClass("important");
+   
+});
+
+}
+
+
+</script>
+<style>
+.important {
+    font-weight: bold;
+    font-size: xx-large;
+}
+.img1{
+width:100px;
+}
+.img2{
+width:500px;
+}
+
+
+
+.blue1{
+color: red;
+}
+.blue {
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<img src="https://careeroffer.org/wp-content/uploads/2018/04/zopak.png">
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<div id="a">This is some important text!</div><br>
+
+<button>Add classes to elements</button>
+
+</body>
+</html>

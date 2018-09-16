@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Brite Start</title>
+	<link rel="icon" href="img/img.jpg">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/overwrite.css">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/style.css" rel="stylesheet" />	
+
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link href="css/hover.css" rel="stylesheet" media="all">
+
+	
+	
+<style>
+
+.social {
+  position: fixed;
+  margin-top: -450px;
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: yellow;
+  background: red;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+ padding-right:1px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.box1{
+
+		color:black;
+
+}
+.box2{
+
+color:black;
+
+}
+.box3{
+margin-left: -20px;
+	width: 250px;
+	height: 460px;
+color:black;
+
+}
+.cap11{
+	margin-bottom:-30px;
+}
+.img11{
+	padding-top: 78px;
+	}
+</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/* Get iframe src attribute value i.e. YouTube video url
+			and store it in a variable */
+			var url = $("#Video").attr('src');
+		  
+			
+			/* Assign empty url value to the iframe src attribute when
+			modal hide, which stop the video playing */
+			$("#myModal").on('hide.bs.modal', function(){
+				$("#Video").attr('src', '');
+			});
+			
+			/* Assign the initially stored url back to the iframe src
+			attribute when modal is displayed again */
+			$("#myModal").on('show.bs.modal', function(){
+				$("#Video").attr('src', url);
+			});
+		});
+		if($(window).width()==1024){
+$(document).ready(function(){
+   
+        $("#box1").addClass("box3");
+		$("#box2").addClass("box3");
+		$("#box3").addClass("box3");
+		$("#box4").addClass("box3");
+		$("#img1").addClass("img11");
+		$("#img2").addClass("img11");
+		$("#img3").addClass("img11");
+    
+});
+
+}
+if($(window).width()==768){
+$(document).ready(function(){
+   
+        $("#box1").addClass("box2");
+		$("#box2").addClass("box2");
+		$("#box3").addClass("box2");
+		$("#box4").addClass("box2");
+    
+});
+
+}
+if($(window).width()==320){
+$(document).ready(function(){
+	
+	$("#box1").addClass("box1");
+		$("#box2").addClass("box1");
+		$("#box3").addClass("box1");
+		$("#box4").addClass("box1");
+	$("#cap").addClass("cap11");
+	$("#cap1").addClass("cap11");
+	$("#cap2").addClass("cap11");
+	
+	});
+
+}
+else{
+$(document).ready(function(){
+    
+        $("#box1").addClass("box1");
+		$("#box2").addClass("box1");
+		$("#box3").addClass("box1");
+		$("#box4").addClass("box1");
+		
+		
+   
+});
+
+}
+
+
+
+
+		</script>
+   
+  </head>
+  <body>	
+	<header id="header" >
+        <nav class="navbar navbar-fixed-top" role="banner" style="background:#00BFFF">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">BriteStart.com</a>
+                </div>				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#header" class="hvr-icon-pulse">Home<i class="fa fa-home hvr-icon " style="padding-left:10px"></i></a></li>
+                        <li><a href="#feature" class="hvr-icon-pulse">Services<i class="fa fa-cogs hvr-icon" style="padding-left:10px"></i></a></li>
+                        <li><a href="#gallery" class="hvr-icon-pulse">Gallery<i class="glyphicon glyphicon-picture hvr-icon" style="padding-left:10px"></i></a></li>
+                        <li><a href="#pricing" class="hvr-icon-pulse">Price & Plan<i class="fa fa-money hvr-icon" style="padding-left:10px"></i></a></li>
+                        <li><a href="#our-team" class="hvr-icon-pulse">About Us<i class="fa fa-group hvr-icon" style="padding-left:10px"></i></a></li> 
+                        <li><a href="#contact" class="hvr-icon-pulse">Contact<i class="fa fa-phone hvr-icon" style="padding-left:10px"></i></a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->		
+    </header><!--/header-->	
+	<div class="slider">		
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				
+				<div class="carousel-inner">
+					<div class="item active">						
+						<img src="img/4.jpg" id="img2" width="100%" style="height: 600px;" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInDown"  data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2 id="cap" style="text-shadow: 2px 2px black;"><span>A great place to grow</span></h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+							
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
+								<form class="form-inline">
+									<div class="form-group">
+										<a href="#myModal" class="portfolio-item" data-toggle="modal">
+										<button type="livedemo" name="purchase" class="btn btn-primary btn-lg hvr-glow hvr-pulse" required="required">Live Demo</button>
+												</a>
+									</div>
+									<div class="form-group ">
+											<a href="#feature">	<button type="getnow" name="Get Now" class="btn btn-primary btn-lg hvr-glow hvr-pulse" style="width: 240px" required="required">Get Now</button></a>
+									</div>
+								</form>
+							</div>
+						</div>
+				    </div>
+			
+				    <div class="item">
+						<img src="img/5.jpg" id="img3" width="100%"  style="height: 600px;" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2 id="cap1" style="text-shadow: 2px 2px black"><span>Bright from the start</span></h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.3s">								
+								
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">								
+								<form class="form-inline">
+									<div class="form-group">
+										<a href="#myModal" class="portfolio-item" data-toggle="modal">
+											<button type="livedemo" name="purchase" class="btn btn-primary btn-lg hvr-glow hvr-pulse" required="required">Live Demo</button>
+													</a>
+									</div>
+									<div class="form-group">
+											<a href="#feature">	<button type="getnow" name="subscribe" class="btn btn-primary btn-lg hvr-glow hvr-pulse" style="width: 240px" required="required">Get Now</button></a>
+									</div>
+								</form>
+							</div>
+						</div>
+				    </div> 
+				    <div class="item">
+						<img src="img/1.jpg" id="img1" width="100%"   style="height: 600px;" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2 id="cap2" style="text-shadow: 2px 2px black"><span>Grand Welcome.... <span></h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
+								<form class="form-inline">
+									<div class="form-group">
+											<a href="#myModal" class="portfolio-item" data-toggle="modal">
+										<button type="livedemo" name="purchase" class="btn btn-primary btn-lg hvr-glow hvr-pulse"  required="required">Live Demo</button>
+												</a>
+									</div>
+									<div class="form-group">
+											<a href="#feature">	<button type="getnow" name="subscribe" class="btn btn-primary btn-lg hvr-glow hvr-pulse" style="width: 240px" required="required">Get Now</button></a>
+									</div>
+								</form>
+							</div>
+						</div>
+				    </div> 
+				</div>
+				
+				<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i> 
+				</a>
+				
+				<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i> 
+				</a>
+			</div> <!--/#carousel-slider-->
+		</div><!--/#about-slider-->
+	</div><!--/#slider-->
+	
+
+<nav class="social">
+          <ul>
+              <li><a href="https://twitter.com/gian_michelle" >Twitter <i class="fa "><img src="img/twitter.png" style="width: 21px; height: 21px;"></i></a></li>
+              <li><a href="https://facebook.com/">Facebook <i class="fa "><img src="img/facebook.png" style="width: 21px; height: 21px;"></i></a></li>
+              <li><a href="http://google.com">Google+ <i class="fa "><img src="img/google.png" style="width: 21px; height: 21px;"></i></a></li>
+              <li><a href="http://yahoo.com">Yahoo <i class="fa "><img src="img/yahoo.png" style="width: 21px; height: 21px;"></i></a></li>
+          </ul>
+      </nav>
+
+
+    <div id="myModal" class="modal fade" >
+			<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  
+			</div>
+					<div class="modal-body" id="video1">
+							<iframe id="Video" width="860" height="420" src="https://www.youtube.com/embed/LHT2zVYvObg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+					</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+				</div>
+			</div>
+		</div>
+	  
+
+
+
+	<div id="feature" style="background: linear-gradient(#99ffe6,#ffb3cc);">
+		<div class="container">
+				<section class="demo-2">
+			<div class="row">
+				<div class="text-center">
+					<h3 style="text-shadow: 2px 2px white">What We Offer</h3>
+					<p>Providing reliable and dependable child care services</p>
+				</div>
+				<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="box" id="box1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+							<line class="top" x1="0" y1="0" x2="900" y2="0"/>
+							<line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+							<line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+						</svg>
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa"><img src="img/ic.png" style="width:50px; height:50px"></i>						
+							<h2>Safety First</h2>
+							<p>We understand the importance of safety for parents and we provide a safe and sound atmosphere in the school</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+				<div class="box" id="box2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+							<line class="top" x1="0" y1="0" x2="900" y2="0"/>
+							<line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+							<line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+						</svg>
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa"><img src="img/ic1.png" style="width:50px; height:50px"></i>	
+							<h2>infrastructure</h2>
+							<p>We are well-equipped with the state-of-the-art infrastructure designed keeping in mind attitude, interests and taste of children</p>
+						</div>
+					</div>
+				</div></div>
+				<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+				<div class="box" id="box3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+							<line class="top" x1="0" y1="0" x2="900" y2="0"/>
+							<line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+							<line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+						</svg>
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa"><img src="img/ic2.png" style="width:50px; height:50px"></i>	
+							<h2>Class Rooms</h2>
+							<p>As we focus on every child attentively, we have small sized classes where day care experts and teachers are there to take good care of the kids</p>
+						</div>
+					</div>
+				</div></div>
+				<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+				<div class="box" id="box4">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+							<line class="top" x1="0" y1="0" x2="900" y2="0"/>
+							<line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+							<line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+							<line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+						</svg>
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa"><img src="img/ic3.png" style="width:50px; height:50px"></i>	
+							<h2>Activities</h2>
+							<p>We carry out an array of activities to ensure overall growth and development of kids. We introduce new physical and mental activities on a daily basis</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				
+
+</div>
+</section>
+				<div class="row">
+				<div class="text-center">
+					<h3 style="text-shadow: 2px 2px white">Programs & Timings</h3>
+					<p>Providing reliable and dependable child care services</p>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/school.jpg" alt="" style="height:182px; width:182px; border-radius: 50%" >
+						<h2><button type="button" class="btn btn-info hvr-glow hvr-pulse" data-toggle="collapse" data-target="#demo">Schooling</button></h2>
+					</div>
+					 
+					 <div id="demo" class="collapse">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">Junior Toddler (Timing 10am-12noon)</li>
+    <li class="list-group-item list-group-item-info">Senior Toddler (Timing 10am-12noon)</li>
+    <li class="list-group-item list-group-item-warning">Pre K (Timing 9:30 am � 12:30 noon)</li>
+    <li class="list-group-item list-group-item-danger">K-1 (Timing 9:30 am � 1 pm)</li>
+  </ul></div>
+				</div>
+				<div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/daycare.jpg" alt="" style="height:182px; width:182px;border-radius: 50%">
+						<h2><button type="button" class="btn btn-info hvr-glow hvr-pulse" data-toggle="collapse" data-target="#demo1">Daycare</button></h2>
+					</div>
+					<div id="demo1" class="collapse">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">Full Day Care (9.00 am - 6.00 pm)</li>
+    <li class="list-group-item list-group-item-info">Extended Day Care (8:30 am to 8.30 pm)</li>
+    
+  </ul></div>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/after.jpg" alt="" style="height:182px; width:182px;border-radius: 50%">
+						<h2><h2><button type="button" class="btn btn-info hvr-glow hvr-pulse" data-toggle="collapse" data-target="#demo2">After School care</button></h2></h2>
+					</div>
+					<div id="demo2" class="collapse">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">Jr. after school daycare (12:30-6:00pm)</li>
+    <li class="list-group-item list-group-item-info">Jr. extended school daycare (12:30-7:30pm)</li>
+    <li class="list-group-item list-group-item-warning">Sr. extended school daycare (3:30-7:30pm)</li>
+    <li class="list-group-item list-group-item-danger">K-1 (Timing 9:30 am � 1 pm)</li>
+  </ul></div>
+			
+				</div>	
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="gallery" style="background: linear-gradient(#80b3ff,  #80ffe5);">
+		<div class="container">
+			<div class="text-center wow bounceInDown">
+				<h3 style="text-shadow: 2px 2px white">Gallery</h3>
+				<p >Providing an all inclusive, safe, and caring environment for children</p>
+			</div>
+			<div class="row">
+				<figure class="effect-chico">						
+					<div class="col-sm-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/2.jpg" class="flipLightBox">
+						<img src="img/2.jpg" style="height: 260px;"class="img-responsive" alt="">
+						</a>						
+					</div>
+				</figure>
+				<figure class="effect-chico">
+					<div class="col-sm-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/15.jpg" class="flipLightBox">
+						<img src="img/15.jpg" style="height: 260px;" class="img-responsive" alt="">
+						</a>
+					</div>
+				</figure>	
+				<figure class="effect-chico">
+					<div class="col-sm-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/10.jpg" class="flipLightBox">
+						<img src="img/10.jpg" style="height: 260px;" class="img-responsive" alt="">
+						</a>
+					</div>
+				</figure>
+				<figure class="effect-chico">
+					<div class="col-sm-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/11.jpg" class="flipLightBox">
+						<img src="img/11.jpg" style="height: 260px;" class="img-responsive" alt="">
+						</a>
+					</div>	
+				</figure>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="container">
+				<div class="row">
+					<figure class="effect-chico">
+						<div class="col-sm-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/12.jpg" class="flipLightBox">
+							<img src="img/12.jpg" style="height: 260px;" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-sm-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/13.jpg" class="flipLightBox">
+							<img src="img/13.jpg" style="height: 260px;" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-sm-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/9.jpg" class="flipLightBox">
+							<img src="img/9.jpg" style="height: 260px;" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-sm-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/6.jpg" class="flipLightBox">
+							<img src="img/6.jpg" style="height: 260px;" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div><!--/#gallery-->
+	
+	
+	
+	<div id="pricing" style="background: linear-gradient(#ffa366,  #80ffe5);">
+		<div class="container">
+			<div class="text-center wow bounceInDown" >
+				<h3 style="text-shadow: 2px 2px white">Choose Your Plan</h3>
+				<p>Our facilities is designed like home to feel like home</p>
+			</div>
+			
+			<div class="pricing-area text-center">
+                <div class="row">
+                    <div class="col-sm-4 plan price-one wow fadeInDown" data-wow-offset="0" data-wow-delay="0.2s">
+                        <ul>
+                            <li class="heading-one">
+                                <h2>Basic</h2>
+                                <span>$6/Month</span>
+                            </li>
+                            <li>part-time care</li>
+                            <li>Education</li>
+                            <li>Basic Food</li>
+                            <li>Health promotion materials</li>
+                            <li>Continuous care</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary hvr-pulse">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 plan price-two wow fadeInDown" data-wow-offset="0" data-wow-delay="0.6s">
+                        <ul>
+                            <li class="heading-two">
+                                <h2>Standard</h2>
+                                <span>$12/Month</span>
+                            </li>
+                            <li> full-time care</li>
+                            <li>Education</li>
+                            <li>Special Food</li>
+                            <li>Health promotion materials</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary hvr-pulse">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 plan price-three wow fadeInDown" data-wow-offset="0" data-wow-delay="0.9s">
+                        <img src="img/ri.png">
+                        <ul>
+                            <li class="heading-three">
+                                <h2>Premium</h2>
+                                <span>$24/Month</span>
+                            </li>
+                            <li>Long day care </li>
+                            <li>Education</li>
+                            <li>Special Food</li>
+                           <li>Family Health Service</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary hvr-pulse">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+<!--
+                    <div class="col-sm-6 col-md-3 plan price-four wow fadeInLeft">
+                        <ul>
+                            <li class="heading-four">
+                                <h2>Basic</h2>
+                                <span>$3/Month</span>
+                            </li>
+                            <li>5 Gb Disk Space</li>
+                            <li>1GB Dadicated Ram</li>
+                            <li>10 Addon Domain</li>
+                            <li>10 Email Account</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-five wow fadeInLeft">
+                        <ul>
+                            <li class="heading-five">
+                                <h2>Standard</h2>
+                                <span>$6/Month</span>
+                            </li>
+                            <li>5 Gb Disk Space</li>
+                            <li>1GB Dadicated Ram</li>
+                            <li>10 Addon Domain</li>
+                            <li>10 Email Account</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-six wow fadeInRight">
+                         <img src="img/rib.png">
+                        <ul>
+                            <li class="heading-six">
+                                <h2>Premium</h2>
+                                <span>$12/Month</span>
+                            </li>
+                            <li>5 Gb Disk Space</li>
+                            <li>1GB Dadicated Ram</li>
+                            <li>10 Addon Domain</li>
+                            <li>10 Email Account</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-seven wow fadeInRight">
+                        <ul>
+                            <li class="heading-seven">
+                                <h2>Developer</h2>
+                                <span>$19/Month</span>
+                            </li>
+                            <li>5 Gb Disk Space</li>
+                            <li>1GB Dadicated Ram</li>
+                            <li>10 Addon Domain</li>
+                            <li>10 Email Account</li>
+                            <li>24/7 Support</li>
+                            <li class="plan-action">
+                                <a href="" class="btn btn-primary">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+					-->
+                </div>
+				
+            </div>
+			
+		</div>
+	</div><!--/#pricing-->
+	
+	<div class="parallax-window">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="text-center">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.2s">
+						<h2 style="color: #38ff8c;text-shadow: 3px 3px white">Join Your Child like a Home	</h2>
+					</div>
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.6s">
+						
+					</div>
+				</div>
+			</div>
+			<div class="sub-parallax">
+				<div class="text-center">
+					<div class="col-md-12">
+						<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.9s">
+							<form class="form-inline">
+								<div class="form-group">
+									<button type="purchase"  style="width:auto;" name="purchase" class="btn btn-primary btn-lg hvr-ripple-out hvr-pulse" style="width: 250px" equired="required">Sign In</button>
+								</div>
+								<div class="form-group">
+									<button type="subscribe"  style="width:auto;"name="subscribe" class="btn btn-primary btn-lg hvr-ripple-out hvr-pulse" required="required">Pay Now</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/#parallax-window-->
+
+
+		
+	<div id="our-team"  style="background: linear-gradient( #b3b3ff, #ff8080 );">
+		<div class="container">
+			<div class="text-center wow bounceInDown">
+				<h3 style="text-shadow: 2px 2px white">About Us</h3>
+				<p>Helping to your child develop and learn through fun and creativity</p>
+			</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 wow fadeInLeft " >
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="img/2.jpg" alt="Los Angeles" style="width:100%; height:400px;">
+        <div class="carousel-caption">
+         
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/3.png" alt="Chicago" style="width:100%; height:400px;">
+        <div class="carousel-caption">
+         
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="img/7.jpg" alt="New York" style="width:100%; height:400px;">
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+  
+    </div>
+	</div>
+	
+	
+	</div>
+    <div class="col-sm-8 wow fadeInRight" >
+	<h1 style="color:black;text-shadow: 2px 2px white">About Franchise</h1>
+	<ul>
+	<li><h2>Comprehensive : Training across the year for efficient management of play school.</h2></li>
+	<li><h2>Curriculum Support: Weekly email and SMS communication on themes and concepts.</h2></li>
+	<li><h2>Regular Academic Support for implementing curriculum Guidance on operating a Day Care Center.</h2></li>
+	<li><h2>Guidance on Local Area Marketing ideas to maximise play school centers brand awareness.</h2></li>
+	<li><h2>Very low cost of establishment & There are no hidden costs and no false promises, Minimum Royalty fees.</h2></li>
+	<li><h2>Recruitment Support & Staff Training.</h2></li>
+	</ul>
+	
+	
+	
+	</div>
+    
+  </div>
+</div>
+
+	<!--
+			<div class="row">
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/1.png" alt="">
+						<h2>John Doe</h2>
+						<h4>Founder & CEO</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/2.png" alt="">
+						<h2>John Doe</h2>
+						<h4>Creative Director</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/3.png" alt="">
+						<h2>John Smith</h2>
+						<h4>Creative Director</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fusce fermen tum neque a rutrum varius</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+-->
+		<div class="team">
+			<div class="container">
+			<div class="text-center">
+				<h3 style="text-shadow: 2px 2px white">Our Branches</h3>
+				<p>Helping your child develop and learn through fun and creativity</p>
+			</div>
+				<div class="row">
+					<div class="col-sm-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center">
+							<img src="img/branch3.jpg" class="img-responsive" alt="" style="height:260px; width:404px">
+							<a href="#"><h2 style="font-style:bold;text-shadow: 2px 2px white">AMEERPET</h2></a>
+							
+  <ul class="list-group">
+    <li class="list-group-item list-group active">Mon to Fri, 8:00 Am to 7:00 Pm</li>
+    <li class="list-group-item list-group">Office: +91-8886335588</li>
+    <li class="list-group-item list-group ">7-1-54/A,Near MCH Play Ground,Ameerpet,<br>Hyderabad-16</li>
+    <li class="list-group-item list-group-item"><a href="" class="btn btn-primary hvr-pulse">Visit</a></li>
+  </ul>
+				
+						</div>
+					</div>
+					<div class="col-sm-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center">
+							<img src="img/branch1.jpg" class="img-responsive" alt=""style="height:260px; width:404px">
+							<a href="#"><h2 style="font-style:bold;text-shadow: 2px 2px white">MOOSAPET</h2></a>
+							
+  <ul class="list-group">
+    <li class="list-group-item list-group active">Mon to Fri, 8:00 Am to 7:00 Pm</li>
+    <li class="list-group-item list-group">Office: +91-9030635588</li>
+    <li class="list-group-item list-group">	Plot No-96&97,Anjeneya Nagar,Moosapet,<br>Hyderabad-16</li>
+    <li class="list-group-item list-group-item"><a href="" class="btn btn-primary hvr-pulse">Visit</a></li>
+  </ul>
+						</div>
+					</div>
+					<div class="col-sm-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center">
+							<img src="img/branch2.jpg" class="img-responsive" alt="" style="height:260px; width:404px">
+							<a href="#"><h2 style="font-style:bold;text-shadow: 2px 2px white">MADHAPUR</h2></a>
+							
+  <ul class="list-group">
+    <li class="list-group-item list-group active">Mon to Fri, 8:00 Am to 7:00 Pm</li>
+    <li class="list-group-item list-group">Office: +91-8886335588</li>
+    <li class="list-group-item list-group">	Plot No-96&97,Anjeneya Nagar,Moosapet,<br>Hyderabad-16</li>
+    <li class="list-group-item list-group-item"><a href="" class="btn btn-primary hvr-pulse">Visit</a></li>
+  </ul>
+						</div>
+					</div>
+		
+					<div class="col-sm-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center">
+							<img src="img/branch4.jpg" class="img-responsive" alt="" style="height:260px; width:404px">
+							<a href="#"><h2 style="font-style:bold;text-shadow: 2px 2px white">BORABANDA</h2></a>
+							
+  <ul class="list-group">
+    <li class="list-group-item list-group active">Mon to Fri, 8:00 Am to 7:00 Pm</li>
+    <li class="list-group-item list-group">Office: +91-8886335588</li>
+    <li class="list-group-item list-group">	Plot No-96&97,Anjeneya Nagar,Moosapet,<br>Hyderabad-16</li>
+    <li class="list-group-item list-group-item"><a href="" class="btn btn-primary hvr-pulse">Visit</a></li>
+  </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/#our-team-->
+	
+	<section id="contact" class="wow map zoomIn">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.573423634946!2d78.44364759999984!3d17.432247556040526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90cea4cf9f47%3A0xbcd7dfb46e756fb4!2sLSY+Estates%2C+Kallu+Compound+Rd%2C+Nagarjuna+Nagar+colony%2C+Ameerpet%2C+Hyderabad%2C+Telangana+500073!5e0!3m2!1sen!2sin!4v1529692616685" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+			<br/>
+			<small>
+			  <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=17.437462,78.448288&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+			</small>
+		  </section>
+
+	<footer style=" background: linear-gradient(LightGray,SlateBlue);">
+	<div class="container-fluid" >
+			<div class="container" >
+				<div class="text-center">
+					<h3 style="text-shadow: 2px 2px white;margin-left: 20px;" >Contact Us</h3>
+					<p>Providing reliable and dependable child care services</p>
+				</div>
+			</div>
+			<div class="container" >
+				<div class="row">
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+			<h1 style="color: black;text-shadow: 2px 2px white">BriteStart.com</h1>
+			<p>BriteStart Daffodils a pre school campus & child care centre is aptly located in the serene, pollution free and secure environment of Dharam Karam Road in Ameerpet. We are an institution based on the philosophy of symbiotic association with parents in upbringing the child with love, affection, care and values.</p>
+						
+					</div>				
+					
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+						<h2 style="text-shadow: 2px 2px white">Contact Info</h2>
+						<ul style="list-style: none">
+							<li><i class="fa fa-home fa-2x"></i> 8/3/945/k&L, 2nd floor, 201&202, 
+LSY Estates, Nagaraju nagar colony, YellaReddy Guda, Ameerpet, 
+Hyderabad, Telangana
+500073</li><hr>
+							<li><i class="fa fa-phone fa-2x"></i> +91 9100 129 900</li><hr>
+							<li><i class="fa fa-envelope fa-2x"></i> info@britestart.com</li>
+						</ul>
+					</div>
+					
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">					
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="name" class="form-control" id="exampleInputName" placeholder="name">							
+							</div>
+							
+						</form>
+						
+						<form>	
+							<div class="form-group">
+								<input type="subject" class="form-control" placeholder="Subject">
+							</div>						
+							<textarea class="form-control" rows="5"></textarea>							
+							<div class="form-group">
+								<button type="submit" name="submit" class="btn btn-primary btn-lg hvr-ripple-in hvr-pulse" required="required">Submit Message</button>
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</div><!--/#contact-->					
+		<div class="container">
+			<div class="sub-footer">
+				<div class="text-center wow fadeInUp">
+					<div class="col-md-12 ">
+					<h2 style="text-shadow: 2px 2px white">SIGN OUR NEWSLETTER</h2>
+						<p style="margin-bottom:-60px;">We will send updates once a week</p>
+						<form class="form-inline">
+							<div class="form-group" >
+								<input type="text" class="form-control" style=" border-style: solid;border-width: 1px;border-radius: 10px;height: 50px; width: 250px; margin-top: 30px;" name="purchase" placeholder="Enter Your Mail Id" required="required">
+							</div>
+							<div class="form-group">
+								<button type="subscribe" name="subscribe" class="btn btn-primary hvr-ripple-out hvr-pulse" style="height: 50px; width: 200px;"required="required">Subscribe Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>			
+		<div class="social-icon">
+			<div class="container wow fadeInLeft">
+				<div class="col-md-6 col-md-offset-3">						
+					<ul class="social-network">
+						<li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+					</ul>						
+				</div>
+			</div>
+		</div>		
+			
+		<div class="text-center" style="border:black 2px solid; background-color:whitesmoke;">
+			<div class="copyright">
+				&copy; 2018 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Brite start</a>. All Rights Reserved.
+			</div>	
+			
+	</footer>
+
+	
+	<div style="margin-bottom: -90px;"></div>
+	</div>	
+
+	
+
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>		
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	
+	<script src="js/parallax.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script>
+	wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>	
+  </body>
+</html>
